@@ -18,7 +18,7 @@ def download(url):
     with tube.YoutubeDL(options) as video:
         info = video.extract_info(url, download=False)
     if info is None:  # Failed to process the page.
-        return None, None
+        return None, None, None
     duration = info['duration']
     thumbnail_url = info['thumbnail']
     options['format'] = identify_format(info)
