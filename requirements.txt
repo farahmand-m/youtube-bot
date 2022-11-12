@@ -7,7 +7,7 @@ idna==3.4
 imageio==2.22.3
 imageio-ffmpeg==0.4.7
 moviepy==1.0.3
-numpy==1.23.4
+numpy==1.21.6
 Pillow==9.3.0
 proglog==0.1.10
 python-telegram-bot==13.14
