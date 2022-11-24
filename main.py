@@ -137,7 +137,7 @@ if __name__ == '__main__':
     os.makedirs('videos', exist_ok=True)
     webhook_url = os.environ.get('WEBHOOK')
     if webhook_url is not None:
-        updater.start_webhook(listen='0.0.0.0', port=80, url_path=bot_token, webhook_url=f'{webhook_url}/{bot_token}')
+        updater.start_webhook(listen='0.0.0.0', port=8443, url_path=bot_token, webhook_url=f'{webhook_url}/{bot_token}')
     else:
         updater.start_polling()
     logging.info('Started pooling.')
